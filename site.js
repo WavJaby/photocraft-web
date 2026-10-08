@@ -4,7 +4,7 @@ const preferredLanguage = navigator.languages?.[0] || navigator.language || 'en'
 const traditionalChinese = /^zh(?:-|$)/i.test(preferredLanguage);
 if (traditionalChinese) {
   const translations = {
-    badge: '非官方網頁體驗 · v0.3.0',
+    badge: '非官方網頁體驗 · v0.5.0',
     source: '原作 GitHub ↗',
     download: '下載官方桌面版 ↗',
     notice: '使用說明',
@@ -13,13 +13,13 @@ if (traditionalChinese) {
     licenses: '授權與署名',
     heading: '更方便體驗 PhotoCraft',
     purpose: '本站只是讓大家不用安裝，就能體驗 PhotoCraft 原作。軟體由 ArtCraft 團隊與貢獻者開發；本站非官方營運，未獲官方背書。',
-    build: '載入官方 v0.3.0 網頁成品，JavaScript／WASM 模組；本站使用獨立單頁啟動器。',
+    build: '載入官方 v0.5.0 網頁成品，JavaScript／WASM 模組；本站使用獨立單頁啟動器。',
     parity: '網頁版與桌面版共用編輯引擎，但功能並非完全相同。',
     files: '檔案由瀏覽器選取；儲存會下載新檔。直接讀寫磁碟、連結檔案及資料夾批次操作受限。',
     persistence: '此網頁版本未接上桌面版的當機自動復原、持久筆刷庫及系統圖片剪貼簿；請主動儲存。',
     performance: '網頁版無法直接使用系統字型；重運算可能卡住介面，大圖受瀏覽器記憶體與 GPU 限制。',
     alpha: '瀏覽器限制不代表桌面版也有相同限制；PhotoCraft 本身仍在 alpha 階段，桌面版也不保證所有功能完整。',
-    evidence: '說明依 v0.3.0 原始碼核對，未逐項驗證所有編輯功能。正式工作前，請另存副本並試用官方桌面版。',
+    evidence: '說明依 v0.5.0 原始碼核對，未逐項驗證所有編輯功能。正式工作前，請另存副本並試用官方桌面版。',
     storage: '瀏覽器不允許儲存此偏好；下次開啟仍會顯示說明。',
     remember: '此瀏覽器不再提醒（仍可從「使用說明」重新開啟）',
     start: '開始體驗',

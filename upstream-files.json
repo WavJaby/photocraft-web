@@ -1,12 +1,13 @@
 {
-  "release": "v0.3.0",
-  "archive": "https://github.com/storytold/photocraft/releases/download/v0.3.0/photocraft-web-0.3.0.zip",
-  "archiveSha256": "1825b2beb2b84331124f6cb78e5eb6eb9584612e8ad6a4e817b7f27cb3f93d06",
+  "version": "0.5.0",
+  "release": "v0.5.0",
+  "archive": "https://github.com/storytold/photocraft/releases/download/v0.5.0/photocraft-web-0.5.0.zip",
+  "archiveSha256": "855da01e7ce518049c6f3a090f1218864f7b780811e340db409e5c3cef93cd6d",
   "files": [
     {
-      "path": "app/_headers",
-      "bytes": 326,
-      "sha256": "e3e253de74fb99a761fc91d4dec4b81ad6a1022b29c98761b5ac1e8ba5aff05a"
+      "path": "app/photocraft-web-d1c0874c5553435c_bg.wasm",
+      "bytes": 22602197,
+      "sha256": "fff88b970a2339dfa831064384b8764f35941e9459ff49d2c59b4fa12cd50bb2"
     },
     {
       "path": "app/.htaccess",
@@ -14,14 +15,19 @@
       "sha256": "c92d61b428bff284fce08dc57f0255261476397f2cba5836c833974eded5c725"
     },
     {
-      "path": "app/HOSTING.md",
-      "bytes": 5158,
-      "sha256": "ee623d60ba5b4538badeaa52447cb018116507ecdb376ab0d087280afeb153a0"
+      "path": "app/photocraft-web-d1c0874c5553435c.js",
+      "bytes": 162311,
+      "sha256": "7b6eb2fed2f4c6995962d437778c6d657c291f69ea2b2de2a6f4fc7d848e0041"
     },
     {
       "path": "app/index.html",
       "bytes": 2320,
-      "sha256": "9aab1b9d486fc4aadad38868c6c19163111b4fccbc83c198afffce20fe2fb6b9"
+      "sha256": "81a59019781ba97c473af0de32f021a4d276a0064deddbff17d1e15d9307f6be"
+    },
+    {
+      "path": "app/_headers",
+      "bytes": 326,
+      "sha256": "e3e253de74fb99a761fc91d4dec4b81ad6a1022b29c98761b5ac1e8ba5aff05a"
     },
     {
       "path": "app/LICENSE-MIT",
@@ -35,18 +41,13 @@
     },
     {
       "path": "app/README.md",
-      "bytes": 26223,
-      "sha256": "58c7c2def9cde974fbce5361698ac831936aaf053a5da7ea29c6be8215152776"
+      "bytes": 29038,
+      "sha256": "cbd1b5c8ebd16688d0c23dd381a1e0391616dea2770ea49e475a16c416338bb9"
     },
     {
-      "path": "app/photocraft-web-72921900975c7e6f.js",
-      "bytes": 162311,
-      "sha256": "9d0cd08076224bfac6cf21b6e4bc68b2e4edd2492ecaeaff8d2a84ec0e23b8a4"
-    },
-    {
-      "path": "app/photocraft-web-72921900975c7e6f_bg.wasm",
-      "bytes": 24710609,
-      "sha256": "ba4f823d2d2f913411cdd272be71dad9ce9b5182bc3b038597502ca395ecc003"
+      "path": "app/HOSTING.md",
+      "bytes": 5158,
+      "sha256": "ee623d60ba5b4538badeaa52447cb018116507ecdb376ab0d087280afeb153a0"
     }
   ]
 }

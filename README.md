@@ -6,7 +6,7 @@ Community hosting mirror intended to make PhotoCraft easier to try without insta
 
 ## Layout and use
 
-`index.html`, `site.css` and `site.js` provide the independent hosting page, dismissible notice and upstream links. `app/` contains the official v0.3.0 web application plus upstream license notices. No upstream application code or brand assets are modified. The hosting page uses plain text attribution and no extracted ArtCraft logos.
+`index.html`, `site.css` and `site.js` provide the independent hosting page, dismissible notice and upstream links. `app/` contains the official v0.5.0 web application plus upstream license notices. No upstream application code or brand assets are modified. The hosting page uses plain text attribution and no extracted ArtCraft logos.
 
 Serve the site over HTTP/HTTPS; opening HTML with `file://` is unsupported. Build preview: `node scripts/build-site.cjs` prints a dry-run when the pinned Wasm is present; `node scripts/build-site.cjs --write` restores missing Wasm and creates `_site/`, refusing an existing output directory. Serve with `python -m http.server 8765 --bind 127.0.0.1 --directory _site`, then visit http://localhost:8765/. Serving the source root instead uses the restored single-file input. GitHub Pages uses the Actions workflow in `.github/workflows/pages.yml`; Wasm and generated compressed parts never enter Git. Relative URLs support project subpaths. The official module reads `?webgl` and `?cpu` directly from the main page. The notice preference is stored only in this browser's localStorage; "使用說明" reopens it, and clearing the checkbox restores reminders. If storage is blocked, reminders return next visit.
 
@@ -46,13 +46,13 @@ Source: https://github.com/storytold/photocraft/tree/v0.3.0. Desktop also remain
 
 PhotoCraft is MIT OR Apache-2.0 at your option; see LICENSE-MIT and LICENSE-APACHE. Hosting-page code added here is MIT under LICENSE-MIT. Preserve [upstream NOTICE](app/NOTICE), [asset attribution](app/ATTRIBUTION.md) and their referenced license texts. ArtCraft trademarks have [separate terms](app/docs/brand/LICENSE-brand.txt).
 
-Official binary source: https://github.com/storytold/photocraft/releases/tag/v0.3.0. Original release files were verified byte-for-byte against the locally downloaded release, not independently authenticated against release checksums. Added notices were taken from the upstream v0.3.0 tag. No complete transitive Rust-dependency license audit has been performed.
+Official binary source: https://github.com/storytold/photocraft/releases/tag/v0.5.0. The archive matches official SHA256SUMS.txt; original application files are pinned by size and SHA-256. Supplemental notices match the v0.5.0 tag. This establishes release consistency, not an independent author-signature chain. No complete transitive Rust-dependency license audit has been performed.
 
 ## Single-page hosting and updates
 
 The community bootstrap in `app-loader.js` mounts the official canvas in the main document; no iframe is created. Original JS/Wasm are verified against `upstream-files.json`. The host, loader and layout are community code, not an official build or endorsement. Keep upstream copyright, licenses, NOTICE and third-party attributions; do not extract ArtCraft brand marks into the host.
 
-Wasm and compressed parts are ignored. CI downloads the exact archive pinned by URL + SHA-256, restores the verified Wasm, generates a fresh Pages artifact, and deploys it without committing binaries. WordCraft previews must be archived as GitHub Release assets because upstream CI artifacts expire. Browser asset caches retire prior Wasm hashes on service-worker activation. Existing Git history is not rewritten by this change.
+Wasm and compressed parts are ignored. CI downloads the exact archive pinned by URL + SHA-256, restores the verified Wasm, generates a fresh Pages artifact, and deploys it without committing binaries. Browser asset caches retire prior Wasm hashes on service-worker activation. Existing Git history is not rewritten by this change.
 
 1. Select an explicit official web ZIP and verify its published SHA-256; never silently follow latest.
 2. Run `node scripts/update-upstream.cjs --archive HTTPS_ZIP_URL --sha256 SHA256 --version VERSION` to inspect the update, then repeat with `--write`. The command rejects changed archive/bootstrap contracts; review upstream licensing, supplemental notices and web/desktop differences.

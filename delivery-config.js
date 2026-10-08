@@ -1,9 +1,9 @@
 'use strict';
 globalThis.PHOTOCRAFT_DELIVERY = Object.freeze({
-  "revision": "72921900975c7e6f",
-  "wasmPath": "app/photocraft-web-72921900975c7e6f_bg.wasm",
-  "wasmBytes": 24710609,
-  "wasmSha256": "ba4f823d2d2f913411cdd272be71dad9ce9b5182bc3b038597502ca395ecc003",
+  "revision": "d1c0874c5553435c",
+  "wasmPath": "app/photocraft-web-d1c0874c5553435c_bg.wasm",
+  "wasmBytes": 22602197,
+  "wasmSha256": "fff88b970a2339dfa831064384b8764f35941e9459ff49d2c59b4fa12cd50bb2",
   "partsManifest": null,
   "partBytes": 524288,
   "downloadConcurrency": 4,
@@ -14,8 +14,8 @@ globalThis.PHOTOCRAFT_DELIVERY = Object.freeze({
   "slowNoticeSeconds": 30,
   "workerReadyTimeoutMs": 5000,
   "appId": "photocraft",
-  "version": "0.3.0",
+  "version": "0.5.0",
   "canvasId": "photocraft_canvas",
-  "jsPath": "app/photocraft-web-72921900975c7e6f.js",
+  "jsPath": "app/photocraft-web-d1c0874c5553435c.js",
   "bootstrap": "trunk"
 });
