@@ -1,0 +1,11 @@
+Unofficial hosting mirror of PhotoCraft v0.3.0
+
+PhotoCraft is created by the ArtCraft Team and the PhotoCraft contributors. This mirror provides browser access to the official web build; it does not claim authorship or endorsement by the upstream project.
+
+Original project: https://github.com/storytold/photocraft
+Official website: https://getartcraft.com/apps/photocraft
+Original release: https://github.com/storytold/photocraft/releases/tag/v0.3.0
+
+The application HTML, JavaScript and WebAssembly files are unchanged from the downloaded release. This hosting package adds .nojekyll, this notice, and upstream attribution/license files from the v0.3.0 tag.
+
+PhotoCraft code: MIT OR Apache-2.0, at your option; see LICENSE-MIT and LICENSE-APACHE. Third-party assets retain their own licenses; see NOTICE, ATTRIBUTION.md and the referenced license files. ArtCraft trademarks have separate terms; see docs/brand/LICENSE-brand.txt.
